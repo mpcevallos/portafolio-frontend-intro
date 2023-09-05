@@ -1,0 +1,406 @@
+/* Estilos generales */
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 68px;
+}
+
+.btn-blue-margin {
+  margin-top: 40px;
+}
+
+/* Iconos */
+i {
+  font-size: 18px;
+}
+
+.large-icon {
+  font-size: 40px;
+}
+
+.btn-primary-purple {
+  background-color: #996bd9;
+  border: 0px;
+  margin: 40px 10px;
+}
+
+.seccion-titulo {
+  font-size: 2rem;
+  padding: 15px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.seccion-texto {
+  font-size: 1.2rem;
+  margin: 0px 20px;
+}
+
+/* Barra de navegacion */
+.navbar {
+  padding: 2rem;
+  background-color: #f5f6f7;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Section 1 */
+.section1 {
+  background-color: #f5f6f7;
+  text-align: center;
+  background: rgb(91, 27, 189);
+  background: linear-gradient(
+    0deg,
+    rgba(91, 27, 189, 1) 0%,
+    rgba(110, 232, 255, 1) 100%
+  );
+}
+
+.saludo {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 400;
+  margin: 0px 20px;
+}
+
+.section1-principal {
+  padding: 0rem;
+}
+
+.section2-imagen {
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.seccion-descripcion {
+  font-size: 1.2rem;
+  color: #584e4e;
+}
+
+/* Experiencia */
+
+.seccion-clara {
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+
+.experiencia {
+  color: white;
+  background-color: #996bd9;
+  padding: 40px 40px 60px 40px;
+}
+
+.experiencia .columna {
+  padding: 20px;
+  border: 2px solid #7814a732;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover {
+  color: #1b1b32;
+  background-color: #ffffff;
+}
+
+.experiencia-titulo {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.experiencia i {
+  font-size: 2.5rem;
+  color: #996bd9;
+  background-color: white;
+  padding: 8px 19px;
+  border-radius: 100%;
+  box-shadow: 4px 4px 4px rgba(17, 17, 17, 0.12);
+}
+
+.badges-contenedor {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badge {
+  margin: 5px;
+  font-size: 15px;
+}
+
+/* Proyectos*/
+
+.proyectos-recientes {
+  padding: 40px;
+}
+
+.proyectos-recientes img {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.proyectos-contenedor {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+.overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.proyecto:hover img {
+  opacity: 0.2;
+}
+
+.proyecto {
+  position: relative;
+  margin-bottom: 20px; /* Agrega un margen inferior para separar las imágenes */
+}
+
+.proyecto:hover .overlay {
+  opacity: 1;
+}
+
+.overlay .iconos-contenedor {
+  display: flex;
+}
+
+.overlay i {
+  color: black;
+  font-size: 60px;
+  margin: 10px;
+}
+
+/*.experiencia .row div {
+  height: 250px;
+  background-color: purple;
+  border: 3px solid orange;
+}
+
+.sesion-oscura {
+  color: white;
+  background-color: #1d1d1d;
+}
+
+.section1-principal h2 {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+/* Sobre mi */
+
+.acerca-de-mi {
+  height: 500px;
+}
+
+.acerca-de-mi .contenedor {
+  max-width: 600px;
+  color: #565c64;
+}
+
+/* Profile Picture */
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  margin-top: 200px;
+  border: 3px solid white;
+}
+
+/*Proyectos recientes*/
+
+.proyectos-recientes {
+  padding: 40px;
+}
+
+/* Footer */
+
+.seccion-footer {
+  color: rgb(225, 225, 225);
+  background-color: rgb(24, 24, 24);
+  max-height: 400px;
+  padding-bottom: 40px;
+}
+
+.footer {
+  min-height: 500px;
+}
+
+.footer-logo {
+  height: 50px;
+  width: 50px;
+  margin-top: 60px;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-texto {
+  font-size: 1.5rem;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+.iconos-redes-sociales a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i {
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.color-blanco-botones a:hover {
+  background-color: white;
+  border: 2px solid rgb(13, 110, 253);
+}
+
+.iconos-redes-sociales a:hover i {
+  color: black;
+}
+
+.footer-full-width {
+  width: 100%;
+  background-color: black;
+}
+
+.derechos-de-autor {
+  font-size: 15px;
+  color: #aeaeae;
+  padding: 20px;
+}
+
+/* Adaptable (Responsivo) */
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .section2-imagen {
+    max-width: 600px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  #resultsContainer {
+    display: none;
+    margin-top: 4px;
+    min-width: 325px;
+    border-radius: 20px;
+  }
+
+  @media screen and (max-width: 400px) {
+    .overlay p {
+      font-size: 18px;
+    }
+
+    .overlay i {
+      font-size: 40px;
+    }
+  }
+
+  /*Javascript Module Testimonios y ranking*/
+
+  /* Estilos para el contenedor de resultados */
+  #resultsContainer {
+    display: none;
+    margin-top: 4px;
+    min-width: 630px;
+    border-radius: 20px;
+  }
+
+  /* Estilos para el marco interno de los resultados */
+  .results-inner {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Estilos para las estrellas */
+  #ratingStars {
+    font-size: 3rem; /* Tamaño de las estrellas */
+    color: #1d1d1d;
+  }
+
+  #ratingStars .star {
+    color: #636363; /* Color gris inicial */
+    transition: color 0.3s; /* Transición suave del color al pasar el mouse */
+    /* border: 1px solid whitesmoke; */
+    cursor: pointer;
+  }
+
+  #ratingStars .star.active,
+  #ratingStars .star:hover {
+    color: #ffc108; /* Color amarillo al pasar el mouse y seleccionadas */
+  }
+
+  /* Estilos para el cuadro de mensaje */
+  #messageBox {
+    display: none;
+  }
+
+  #successMessage {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 60px;
+  }
+}
+
+/* Estilos específicos del modo oscuro */
+.dark-theme {
+  background-color: #333;
+  color: white;
+}
+
+.light-theme {
+  background-color: #dbdbdb;
+  color: rgb(70, 70, 70);
+}

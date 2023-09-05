@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Metadatos -->
+  <meta charset="UTF-8" />
+  <meta name="author" content="Maria Paula Cevallos" />
+  <meta name="description" content="Portafolio de desarollo web de Maria Paula Cevallos" />
+  <meta name="keywords" content="HTML, CSS, Javascript, Web Developments" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+
+  <!-- CSS propio -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+  <!-- Titulo -->
+  <title>PauDev | Desarrollo Web Front-End</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+    <symbol id="circle-half" viewBox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+    </symbol>
+
+    <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+      <path
+        d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+      <path
+        d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+    </symbol>
+
+    <symbol id="sun-fill" viewBox="0 0 16 16">
+      <path
+        d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+    </symbol>
+  </svg>
+  <nav class="navbar navbar-expand-lg  py-3" data-bs-theme="light">
+    <div class="container-fluid dark">
+      <a class="navbar-brand pb-2" href="#"></a>
+      <span class=""></span>
+      </button>
+      <div class="navbar-nav" id="navbarSupportedConten">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Modo</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav mb-2 mb-lg-0" data-bs-theme="dark">
+          <li class="nav-item dropdown w-25" data-bs-theme="dark">
+            <button class="btn btn-link nav-link py-1 px-0 px-lg-2 dropdown-toggle d-flex align-items-center"
+              id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static">
+              <svg class="bi my-1 theme-icon-active" width="16" height="16" fill="currentColor">
+                <use href="#circle-half"></use>
+              </svg>
+              <span class="d-lg-none ms-2">Elegir un tema</span>
+            </button>
+
+            <ul class="dropdown-menu dropdown-menu-end px-1" aria-labelledby="bd-theme">
+              <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light">
+                  <svg class="bi me-2 opacity-50 theme-icon" width="16" height="16" fill="currentColor">
+                    <use href="#sun-fill"></use>
+                  </svg>
+                  Claro
+                </button>
+              </li>
+              <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark">
+                  <svg class="bi me-2 opacity-50 theme-icon" width="16" height="16" fill="currentColor">
+                    <use href="#moon-stars-fill"></use>
+                  </svg>
+                  Oscuro
+                </button>
+              </li>
+              <li>
+                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto">
+                  <svg class="bi me-2 opacity-50 theme-icon" width="16" height="16" fill="currentColor">
+                    <use href="#circle-half"></use>
+                  </svg>
+                  Auto
+                </button>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Barra de navegacion -->
+
+  <nav class="navbar navbar-expand-md dark-theme" style="background-color: #1d202100;>
+    <div class=" container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+      aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar-toggler">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/img/favicon.png" width="40" alt="Logo de PauDev">
+      </a>
+      <ul class="navbar-nav d-flex justify-content-center align-items-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#acerca-de-mi"><i class="bi bi-arrow-right-circle"></i>
+            Acerca de
+            mi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="proyectos.html"><i class="bi bi-arrow-right-circle"></i>
+            Proyectos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="experiencia.html"><i class="bi bi-arrow-right-circle"></i>
+            Experiencia</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link dark" href="blog.html"><i class="bi bi-arrow-right-circle"></i> Blog</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+  <!-- Acerca de mi 1 -->
+
+  <section class="section1 align-items-stretch data-bs-theme=" light"">
+    <div class="section1-principal d-flex flex-column justify-content-center align-items-center">
+      <img class="profile-picture rounded-circle" src="/assets/img/paudev.jpeg" alt="Foto de PauDev">
+      <h1>Hola, soy PauDev</h1>
+      <h2 class="saludo">¡Bienvenido (a)!
+        Soy diseñadora gráfica y desarrollo proyectos web</h2>
+      <div class="d-flex justify-content align-items-center">
+        <div class="d-grid gap-2 d-md-block">
+          <button class="btn btn-primary btn-primary-purple btn-lg" type="button"><i class="bi bi-github"></i>
+            <span></span><a href="https://github.com/mpcevallos">GitHub</a></button>
+          <button class="btn btn-primary btn-lg" type="button"><i class="bi bi-linkedin"></i><span></span>
+            <a href="https://www.linkedin.com/in/mpcevallos/">Linkedin</a></button>
+        </div>
+
+      </div>
+      <div class="section2">
+        <img class="section2-imagen img-fluid" src="/assets/img/web-application-development-img.png"
+          alt="Imagen de computadora, celular, laptop, Logos de HTML, CSS y Javascript">
+      </div>
+  </section>
+
+  <!-- Acerca de mi 2 -->
+
+  <section id="acerca-de-mi" class="acerca-de-mi seccion-clara">
+    <div class="contenedor">
+      <h2 class="seccion-titulo text-center"><i class="bi bi-file-earmark-person large-icon"></i> Acerca de mi</h2>
+      <p class="seccion-texto text-center">Disfruto de aprender día a día en mi rama de
+        especialización, enfocada en el
+        cumplimento
+        de metas, con un alto nivel de
+        compromiso. Apasionada por la tecnología, aprendizaje continuo y el conocimiento. Actualmente curso un Master en
+        Full
+        Stack Web Development.</p>
+    </div>
+  </section>
+
+  <!-- Experiencia -->
+
+  <section class="experiencia sesion-oscura dark">
+    <div class="container text-center">
+      <div class="row">
+        <!-- Diseño Gráfico -->
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-vector-pen" data-bs-theme="dark"></i>
+          <p class="experiencia-titulo">Diseño gráfico</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet mi eget erat tempor tincidunt.
+            Duis quis
+            odio ac est ullamcorper lacinia. Nulla ullamcorper urna dui, id semper urna aliquet sed. Suspendisse
+            consectetur.</p>
+          <div class="badges-contenedor">
+            <span class="badge text-bg-dark">Adobe Illustator</span>
+            <span class="badge text-bg-dark">Adobe Photoshop</span>
+            <span class="badge text-bg-dark">Adobe Indesign</span>
+            <span class="badge text-bg-dark">Adobe After Effects</span>
+          </div>
+        </div>
+
+        <!-- Desarrollo Web -->
+
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-laptop"></i>
+          <p class="experiencia-titulo">Desarrollo Web</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet mi eget erat tempor tincidunt.
+            Duis quis
+            odio ac est ullamcorper lacinia. Nulla ullamcorper urna dui, id semper urna aliquet sed. Suspendisse
+            consectetur.</p>
+          <div class="badges-contenedor">
+            <span class="badge text-bg-dark">HTML</span>
+            <span class="badge text-bg-dark">CSS</span>
+            <span class="badge text-bg-dark">Javascript</span>
+            <span class="badge text-bg-dark">Bootstrap 5</span>
+          </div>
+        </div>
+        <!-- Música -->
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-music-note-beamed"></i>
+          <p class="experiencia-titulo">Música</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet mi eget erat tempor tincidunt.
+            Duis quis
+            odio ac est ullamcorper lacinia. Nulla ullamcorper urna dui, id semper urna aliquet sed. Suspendisse
+            consectetur.</p>
+          <div class="badges-contenedor">
+            <span class="badge text-bg-dark">Guitarra</span>
+            <span class="badge text-bg-dark">Voz</span>
+            <span class="badge text-bg-dark">Batería</span>
+            <span class="badge text-bg-dark">Piano</span>
+          </div>
+        </div>
+  </section>
+
+  <!-- Modulo Javascript de Rating y comentarios -->
+
+  <section>
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card p-4">
+            <h2 class="text-center mb-4">Califica y comenta el sitio web</h2>
+            <form id="ratingForm">
+              <div class="d-flex justify-content-center" id="ratingStars"></div>
+              <div class="mb-3">
+                <label for="nameField" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="nameField" placeholder="Ingresa tu nombre" required>
+              </div>
+              <textarea id="descriptionField" class="form-control mt-3" placeholder="Escribe tu comentario aquí..."
+                required></textarea>
+              <button type="submit" class="btn btn-success mt-3 w-100">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="resultsContainer" class="mt-4">
+      <div class="container results-inner">
+        <h2 class="text-center mb-3 text-dark">Resultados:</h2>
+        <p class="text-dark"><strong>Nombre:</strong> <span id="userName">N/A</span></p>
+        <p class="text-dark"><strong>Calificación:</strong> <span id="selectedRatingText">N/A</span></p>
+        <p class="text-dark"><strong>Comentario:</strong></p>
+        <p class="text-dark" id="commentText">N/A</p>
+      </div>
+    </div>
+    <div id="messageBox" class="alert alert-dismissible mt-3" style="display: none;"></div>
+    <div id="successMessage" class="mt-2"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </section>
+
+  <!-- Pie de página o Footer -->
+
+  <footer class="seccion-footer d-flex flex-column align-items-center justify-content-center light">
+    <img class="footer-logo" src="./assets/img/logo-blanco.png" alt="Logo del portafolio de PauDev">
+    <p class="footer-texto text-center">Aprendo y creo todos los días.<br>Creemos un proyecto juntos.</p>
+    <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center color-blanco-botones">
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="https://github.com/mpcevallos" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/mpcevallos/" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="https://www.behance.net/mpcevallos/" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-behance"></i>
+      </a>
+      <a href="mailto:mpcevallos@gmail.com" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-envelope"></i>
+      </a>
+    </div>
+    <div class="derechos-de-autor">Creado por PauDev (2023) &#169;</div>
+  </footer>
+
+  <!-- Bootstrap Javascript -->
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script> -->
+
+</body>
+
+</html>
