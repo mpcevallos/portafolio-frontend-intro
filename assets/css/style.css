@@ -22,7 +22,7 @@ h1 {
   margin-top: 40px;
 }
 
-/* Iconos */
+/* Íconos */
 i {
   font-size: 18px;
 }
@@ -60,7 +60,7 @@ i {
   justify-content: space-between;
 }
 
-/* Section 1 */
+/* Sección 1 */
 .section1 {
   background-color: #f5f6f7;
   text-align: center;
@@ -147,7 +147,7 @@ i {
   font-size: 15px;
 }
 
-/* Proyectos*/
+/* Proyectos */
 
 .proyectos-recientes {
   padding: 40px;
@@ -313,7 +313,7 @@ i {
   padding: 20px;
 }
 
-/* Adaptable (Responsivo) */
+/* Responsivo */
 
 @media screen and (max-width: 767px) {
   .navbar-brand {
@@ -345,7 +345,7 @@ i {
     }
   }
 
-  /*Javascript Module Testimonios y ranking*/
+  /*Módulo Javascript de calificación y comentarios*/
 
   /* Estilos para el contenedor de resultados */
   #resultsContainer {
