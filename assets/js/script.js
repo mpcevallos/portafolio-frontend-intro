@@ -1,5 +1,7 @@
+//#yellow
 document.addEventListener("DOMContentLoaded", function () {
   const ratingForm = document.getElementById("ratingForm");
+  const nameField = document.getElementById("nameField");
   const descriptionField = document.getElementById("descriptionField");
   const ratingStars = document.getElementById("ratingStars");
   const stars = ratingStars.querySelectorAll(".star");
@@ -8,12 +10,19 @@ document.addEventListener("DOMContentLoaded", function () {
   const resultDescription = document.getElementById("commentText");
   const messageBox = document.getElementById("messageBox");
   const successMessage = document.getElementById("successMessage");
+  //#
 
+  //#purple
   let selectedRating = 0;
   let userName = "N/A"; // Inicializamos con "N/A" por defecto
+  //#
+
+  //#green
   console.log("Nombre de usuario ingresado:", nameField.value);
   console.log("Comentario ingresado:", descriptionField.value);
+  //#
 
+  //#orange
   function highlightStars(count) {
     for (let j = 1; j <= 5; j++) {
       const star = ratingStars.children[j - 1];
@@ -24,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   }
+  //#
 
   for (let i = 1; i <= 5; i++) {
     const star = document.createElement("span");
@@ -49,7 +59,11 @@ document.addEventListener("DOMContentLoaded", function () {
   ratingForm.addEventListener("submit", (event) => {
     event.preventDefault();
 
+    userName = nameField.value; // Obtenemos el nombre del usuario aquí
+    console.log("Nombre de usuario ingresado:", userName);
+
     const description = descriptionField.value;
+    console.log("Comentario ingresado:", description);
 
     if (selectedRating) {
       const ratingText = formatRatingText(selectedRating);
@@ -60,19 +74,26 @@ document.addEventListener("DOMContentLoaded", function () {
       // Mostrar los datos en el cuadro de mensaje
       document.getElementById("userName").textContent = userName;
       messageBox.innerHTML = `
-        
+      <p>Nombre de usuario: ${userName}</p>
+      <p>Calificación seleccionada: ${selectedRating}</p>
+      <p>Descripción: ${description}</p>
       `;
-      messageBox.style.display = "block";
+      //messageBox.style.display = "block";
       resultBox.style.display = "block";
 
       showSuccessMessage();
+
+      nameField.value = "";
+      descriptionField.value = "";
+      selectedRating = 0;
+      highlightStars(selectedRating);
     } else {
       showError("Por favor, seleccione una calificación.");
     }
   });
 
   function formatRatingText(rating) {
-    return `${rating} estrella${rating > 1 ? 's' : ''}`;
+    return `${rating} estrella${rating > 1 ? "s" : ""}`;
   }
 
   function showSuccessMessage() {
@@ -113,8 +134,14 @@ document.addEventListener("DOMContentLoaded", function () {
       window.matchMedia("(prefers-color-scheme: dark)").matches
     ) {
       document.documentElement.setAttribute("data-bs-theme", "dark");
+      document.body.classList.add("dark-mode"); // Añade la clase 'dark-mode'
     } else {
       document.documentElement.setAttribute("data-bs-theme", theme);
+      if (theme === "dark") {
+        document.body.classList.add("dark-mode"); // Añade la clase 'dark-mode'
+      } else {
+        document.body.classList.remove("dark-mode"); // Elimina la clase 'dark-mode'
+      }
     }
   };
 
@@ -158,6 +185,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 })();
-
-
-
