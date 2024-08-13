@@ -1,37 +1,39 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <!-- Metadatos -->
   <meta charset="UTF-8" />
   <meta name="author" content="Maria Paula Cevallos" />
-  <meta name="description" content="Portafolio de desarollo web de Maria Paula Cevallos" />
+  <meta name="description" content="Portafolio de desarrollo web de Maria Paula Cevallos" />
   <meta name="keywords" content="HTML, CSS, Javascript, Web Developments" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- CSS Bootstrap -->
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
 
   <!-- CSS propio -->
   <link rel="stylesheet" href="/assets/css/style.css" />
 
-  <!-- Íconos de Bootstrap -->
+  <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
 
-  <!-- Título -->
+  <!-- Titulo -->
   <title>PauDev | Desarrollo Web Front-End</title>
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
 
-  <!-- Fuentes de Google -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="dark"> <!-- Agregamos la clase "dark" al body -->
+
+  <!-- ... (código SVG) ... -->
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
     <symbol id="circle-half" viewBox="0 0 16 16">
       <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
@@ -49,6 +51,10 @@
         d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
     </symbol>
   </svg>
+  </svg>
+
+  <!-- Barra de navegacion -->
+
   <nav class="navbar navbar-expand-lg  py-3" data-bs-theme="light">
     <div class="container-fluid dark">
       <a class="navbar-brand pb-2" href="#"></a>
@@ -57,7 +63,7 @@
       <div class="navbar-nav" id="navbarSupportedConten">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"></a>
+            <a class="nav-link active" aria-current="page" href="#">Modo</a>
           </li>
         </ul>
 
@@ -102,10 +108,11 @@
       </div>
     </div>
   </nav>
+
   <!-- Barra de navegacion -->
 
-  <nav class="navbar navbar-expand-md dark-theme" style="background-color: #1d202100;">
-    <div class=" container-fluid">
+  <nav class="navbar navbar-expand-md navbar-light" data-bs-theme="light">
+    <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
         aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -121,15 +128,13 @@
               mi</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="proyectos.html"><i class="bi bi-arrow-right-circle"></i>
-              Proyectos</a>
+            <a class="nav-link" href="proyectos.html"><i class="bi bi-arrow-right-circle"></i> Proyectos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="experiencia.html"><i class="bi bi-arrow-right-circle"></i>
-              Experiencia</a>
+            <a class="nav-link" href="experiencia.html"><i class="bi bi-arrow-right-circle"></i> Experiencia</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link dark" href="blog.html"><i class="bi bi-arrow-right-circle"></i> Blog</a>
+            <a class="nav-link" href="blog.html"><i class="bi bi-arrow-right-circle"></i> Blog</a>
           </li>
         </ul>
       </div>
@@ -138,7 +143,7 @@
 
   <!-- Acerca de mi 1 -->
 
-  <section class="section1 align-items-stretch" data-bs-theme=" light">
+  <section class="section1 align-items-stretch data-bs-theme=" light"">
     <div class="section1-principal d-flex flex-column justify-content-center align-items-center">
       <img class="profile-picture rounded-circle" src="/assets/img/paudev.jpeg" alt="Foto de PauDev">
       <h1>Hola, soy PauDev</h1>
@@ -179,7 +184,6 @@
   <section class="experiencia sesion-oscura dark">
     <div class="container text-center">
       <div class="row">
-
         <!-- Diseño Gráfico -->
         <div class="columna col-12 col-md-4">
           <i class="bi bi-vector-pen" data-bs-theme="dark"></i>
@@ -229,78 +233,27 @@
         </div>
   </section>
 
-  <!-- Módulo Javascript de calificación y comentarios -->
+  <!-- Modulo Javascript de Rating y comentarios -->
 
   <section>
-    <div class="container my-5">
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <div class="card p-4">
-            <h2 class="text-center mb-4">Califica y comenta el sitio web</h2>
-            <form id="ratingForm">
-              <div class="d-flex justify-content-center" id="ratingStars"></div>
-              <div class="mb-3">
-                <label for="nameField" class="form-label">Nombre:</label>
-                <input type="text" class="form-control" id="nameField" placeholder="Ingresa tu nombre" required>
-              </div>
-              <textarea id="descriptionField" class="form-control mt-3" placeholder="Escribe tu comentario aquí..."
-                required></textarea>
-              <button type="submit" class="btn btn-success mt-3 w-100">Enviar</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="resultsContainer" class="mt-4">
-      <div class="container results-inner">
-        <h2 class="text-center mb-3 text-dark">Resultados:</h2>
-        <p class="text-dark"><strong>Nombre:</strong> <span id="userName">N/A</span></p>
-        <p class="text-dark"><strong>Calificación:</strong> <span id="selectedRatingText">N/A</span></p>
-        <p class="text-dark"><strong>Comentario:</strong></p>
-        <p class="text-dark" id="commentText">N/A</p>
-      </div>
-    </div>
-    <div id="messageBox" class="alert alert-dismissible mt-3" style="display: none;"></div>
-    <div id="successMessage" class="mt-2"></div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+    <!-- ... (contenido del módulo) ... -->
   </section>
 
-  <!-- Pie de página -->
+  <!-- Pie de página o Footer -->
 
   <footer class="seccion-footer d-flex flex-column align-items-center justify-content-center light">
     <img class="footer-logo" src="./assets/img/logo-blanco.png" alt="Logo del portafolio de PauDev">
     <p class="footer-texto text-center">Aprendo y creo todos los días.<br>Creemos un proyecto juntos.</p>
     <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center color-blanco-botones">
-      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-instagram"></i>
-      </a>
-      <a href="https://github.com/mpcevallos" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-github"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/mpcevallos/" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-linkedin"></i>
-      </a>
-      <a href="https://www.behance.net/mpcevallos/" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-behance"></i>
-      </a>
-      <a href="mailto:mpcevallos@gmail.com" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-envelope"></i>
-      </a>
+      <!-- ... (iconos de redes sociales) ... -->
     </div>
     <div class="derechos-de-autor">Creado por PauDev (2023) &#169;</div>
   </footer>
 
   <!-- Bootstrap Javascript -->
 
-  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-    crossorigin="anonymous"></script> -->
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./assets/js/script.js"></script>
-
 </body>
 
 </html>

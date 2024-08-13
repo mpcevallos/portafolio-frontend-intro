@@ -22,7 +22,7 @@ h1 {
   margin-top: 40px;
 }
 
-/* Iconos */
+/* Íconos */
 i {
   font-size: 18px;
 }
@@ -60,7 +60,7 @@ i {
   justify-content: space-between;
 }
 
-/* Section 1 */
+/* Sección 1 */
 .section1 {
   background-color: #f5f6f7;
   text-align: center;
@@ -147,7 +147,7 @@ i {
   font-size: 15px;
 }
 
-/* Proyectos*/
+/* Proyectos */
 
 .proyectos-recientes {
   padding: 40px;
@@ -313,7 +313,7 @@ i {
   padding: 20px;
 }
 
-/* Adaptable (Responsivo) */
+/* Responsivo */
 
 @media screen and (max-width: 767px) {
   .navbar-brand {
@@ -335,6 +335,11 @@ i {
     border-radius: 20px;
   }
 
+  @media screen and (min-width: 360px) {
+  .results-inner {
+    min-width: 300px;
+  }
+
   @media screen and (max-width: 400px) {
     .overlay p {
       font-size: 18px;
@@ -345,7 +350,7 @@ i {
     }
   }
 
-  /*Javascript Module Testimonios y ranking*/
+  /*Módulo Javascript de calificación y comentarios*/
 
   /* Estilos para el contenedor de resultados */
   #resultsContainer {
@@ -357,6 +362,7 @@ i {
 
   /* Estilos para el marco interno de los resultados */
   .results-inner {
+    min-width: 500px;
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 15px;
@@ -403,4 +409,17 @@ i {
 .light-theme {
   background-color: #dbdbdb;
   color: rgb(70, 70, 70);
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode a {
+  color: #fff;
+}
+
+.dark-mode .navbar {
+  background-color: #444;
 }
