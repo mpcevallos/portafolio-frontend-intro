@@ -33,8 +33,13 @@ i {
 
 .btn-primary-purple {
   background-color: #996bd9;
-  border: 0px;
+  border: 2px solid #8447d9;
   margin: 40px 10px;
+}
+
+.btn-primary-purple:hover {
+  background-color: #4c2287;
+  border: none;
 }
 
 .seccion-titulo {
@@ -108,7 +113,7 @@ i {
 
 .experiencia .columna {
   padding: 20px;
-  border: 2px solid #7814a732;
+  border: 0px solid #7814a732;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -327,77 +332,106 @@ i {
   }
 }
 
-@media screen and (min-width: 360px) {
-  #resultsContainer {
-    display: none;
-    margin-top: 4px;
-    min-width: 325px;
-    border-radius: 20px;
-  }
-
-  @media screen and (min-width: 360px) {
-  .results-inner {
-    min-width: 300px;
-  }
-
-  @media screen and (max-width: 400px) {
-    .overlay p {
-      font-size: 18px;
-    }
-
-    .overlay i {
-      font-size: 40px;
-    }
-  }
-
-  /*Módulo Javascript de calificación y comentarios*/
-
-  /* Estilos para el contenedor de resultados */
-  #resultsContainer {
-    display: none;
-    margin-top: 4px;
-    min-width: 630px;
-    border-radius: 20px;
-  }
-
-  /* Estilos para el marco interno de los resultados */
-  .results-inner {
-    min-width: 500px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 15px;
-    background-color: white;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
-  }
-
-  /* Estilos para las estrellas */
+@media screen and (min-width: 320px) {
   #ratingStars {
-    font-size: 3rem; /* Tamaño de las estrellas */
-    color: #1d1d1d;
+    font-size: 1.5rem;
   }
 
-  #ratingStars .star {
-    color: #636363; /* Color gris inicial */
-    transition: color 0.3s; /* Transición suave del color al pasar el mouse */
-    /* border: 1px solid whitesmoke; */
-    cursor: pointer;
+  h1 {
+    font-size: 32px;
   }
 
-  #ratingStars .star.active,
-  #ratingStars .star:hover {
-    color: #ffc108; /* Color amarillo al pasar el mouse y seleccionadas */
+  .footer-texto {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  .results-inner {
+    min-width: 280px;
   }
 
-  /* Estilos para el cuadro de mensaje */
-  #messageBox {
-    display: none;
+  h1 {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .results-inner {
+    min-width: 200px;
+    width: 70%;
   }
 
-  #successMessage {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-bottom: 60px;
+  #ratingStars {
+    font-size: 1.5rem;
   }
+
+  h1 {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .overlay p {
+    font-size: 18px;
+  }
+
+  .overlay i {
+    font-size: 40px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+}
+
+/*Módulo Javascript de calificación y comentarios*/
+
+/* Estilos para el contenedor de resultados */
+#resultsContainer {
+  display: none;
+  margin-top: 4px;
+  min-width: 620px;
+  border-radius: 20px;
+}
+
+/* Estilos para el marco interno de los resultados */
+.results-inner {
+  min-width: 550px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: white;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para las estrellas */
+#ratingStars {
+  font-size: 3rem; /* Tamaño de las estrellas */
+  color: #1d1d1d;
+}
+
+#ratingStars .star {
+  color: #636363; /* Color gris inicial */
+  transition: color 0.3s; /* Transición suave del color al pasar el mouse */
+  /* border: 1px solid whitesmoke; */
+  cursor: pointer;
+}
+
+#ratingStars .star.active,
+#ratingStars .star:hover {
+  color: #ffc108; /* Color amarillo al pasar el mouse y seleccionadas */
+}
+
+/* Estilos para el cuadro de mensaje */
+#messageBox {
+  display: none;
+}
+
+#successMessage {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 60px;
 }
 
 /* Estilos específicos del modo oscuro */
@@ -420,6 +454,70 @@ i {
   color: #fff;
 }
 
+.dark-mode .section1 {
+  background-color: #996bd9;
+  text-align: center;
+  background: #996bd9;
+}
+
+.dark-mode h2 {
+  color: #fff;
+}
+
+.dark-mode .acerca-de-mi {
+  background-color: #363535;
+  color: #ffffff;
+  text-align: center;
+}
+
+.dark-mode .seccion-texto {
+  color: #fff;
+}
+
+.dark-mode .dropdown-toggle::after {
+  color: #fff;
+}
+
+.dark-mode .navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #fff;
+}
+
+.dark-mode #moon-stars-fill {
+  color: #fff;
+}
+
 .dark-mode .navbar {
-  background-color: #444;
+  background-color: rgb(69, 69, 69);
+}
+
+@media screen and (max-width: 580px) {
+  #resultsContainer {
+    display: none;
+    margin: 4px;
+    min-width: 250px;
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .results-inner {
+    min-width: 250px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  #ratingStars {
+    font-size: 2.5rem;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .footer-texto {
+    font-size: 1.3rem;
+  }
 }
